@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Button Example</title>
+    <style>
+        /* Button Styling */
+        .custom-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .custom-button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Button Example</h1>
+
+    <!-- Button with name, id, and other attributes -->
+    <button id="myButton" name="actionButton" class="custom-button" onclick="buttonClicked()" type="button" value="ClickMe" data-info="extraData">
+        Click Me!
+    </button>
+
+    <p id="responseMessage"></p>
+
+    <script>
+        // Function to handle button click
+        function buttonClicked() {
+            document.getElementById("responseMessage").innerHTML = "Button clicked!";
+        }
+    </script>
+
+</body>
+</html>
